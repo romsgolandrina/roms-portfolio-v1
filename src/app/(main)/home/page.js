@@ -190,7 +190,19 @@ const Home = ({ children }) => {
               />
             </h1>
           </section>
-          <div className="w-full h-full bg-red-500 rounded-md">a</div>
+          <div className="w-3/4 rounded-md py-12 mb-32">
+            <h1 className="text-md text-justify text-[#8b8378] font-title font-normal">
+              Loosely designed in{" "}
+              <span className="text-white font-semibold">Figma</span> and coded
+              in <span className="text-white font-semibold">Visual Studio</span>{" "}
+              Code by yours truly. Built with{" "}
+              <span className="text-white font-semibold">Next.js</span> and
+              <span className="text-white font-semibold">Tailwind CSS</span>,
+              deployed with{" "}
+              <span className="text-white font-semibold">Vercel.</span> All text
+              is set in the Inter typeface.
+            </h1>
+          </div>
         </div>
       </div>
     </>
