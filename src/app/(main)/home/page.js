@@ -190,7 +190,7 @@ const Home = ({ children }) => {
               />
             </h1>
           </section>
-          <div className="w-full h-full  rounded-md"></div>
+          <div className="w-full h-full bg-red-500 rounded-md">a</div>
         </div>
       </div>
     </>
