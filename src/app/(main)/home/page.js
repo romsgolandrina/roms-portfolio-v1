@@ -5,6 +5,8 @@ import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link";
+import Image from "next/image";
+import "animate.css";
 
 const Home = ({ children }) => {
   const [backgroundPosition, setBackgroundPosition] = useState("center");
@@ -30,7 +32,7 @@ const Home = ({ children }) => {
           background: `radial-gradient(circle at ${backgroundPosition}, rgba(236, 223, 204, 0.3), rgba(105, 117, 101, 0.2), rgba(30, 32, 30, 0.1))`,
         }}
       >
-        <header className="w-1/2 sticky top-0 max-h-screen flex flex-col py-32 justify-between">
+        <header className="w-1/2 sticky top-0 max-h-screen flex flex-col py-32 justify-between animate__animated animate__fadeIn animate__delay-1s">
           <div className="w-fulls h-full flex flex-col gap-3">
             <h1 className="text-6xl font-bold font-title text-[#ECDFCC] tracking-tight">
               Roms Golandrina
@@ -190,7 +192,37 @@ const Home = ({ children }) => {
               />
             </h1>
           </section>
-          <div className="w-3/4 rounded-md py-12 mb-32">
+          <section id="projects" className="flex flex-col gap-6 mt-16">
+            <Link href="https://www.creciendo.com.ph/home">
+              <div className="w-full flex flex-row gap-1 group p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer">
+                <div className="w-[30%]">
+                  <Image
+                    src="/app/_assets/creciendo.png"
+                    alt="creciendo"
+                    width={1920}
+                    height={1080}
+                  />
+                </div>
+                <div className="w-[60%]">
+                  <h1 className="text-[#c2b7a7] font-normal text-md text-justify font-title">
+                    The{" "}
+                    <span className="text-white">Creciendo Philippines</span>{" "}
+                    hiring website enables users to explore job listings and
+                    submit applications seamlessly. Designed for a smooth user
+                    experience, it streamlines the hiring process for both
+                    applicants and recruiters.
+                  </h1>
+                </div>
+                <div className="w-[10%]">
+                  <FiArrowUpRight
+                    size={25}
+                    className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1"
+                  />
+                </div>
+              </div>
+            </Link>
+          </section>
+          <div className="w-3/4 rounded-md py-12 mb-16">
             <h1 className="text-md text-justify text-[#8b8378] font-title font-normal">
               Loosely designed in{" "}
               <span className="text-white font-semibold">Figma</span> and coded
