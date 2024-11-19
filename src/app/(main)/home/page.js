@@ -29,7 +29,11 @@ const Home = ({ children }) => {
       <div
         className="w-full min-h-screen flex flex-row gap-4 justify-between px-[310px]"
         style={{
-          background: `radial-gradient(circle at ${backgroundPosition}, rgba(236, 223, 204, 0.3), rgba(105, 117, 101, 0.2), rgba(30, 32, 30, 0.1))`,
+          backgroundImage: `radial-gradient(circle at ${backgroundPosition}, rgba(236, 223, 204, 0.3), rgba(105, 117, 101, 0.2), rgba(30, 32, 30, 0.1))`,
+          backgroundColor: "#1e201e", // Fallback for when the gradient is not supported
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          color: "#ECDFCC", // Ensure text color stays consistent
         }}
       >
         <header className="w-1/2 sticky top-0 max-h-screen flex flex-col py-32 justify-between animate__animated animate__fadeIn animate__delay-1s">
@@ -46,19 +50,21 @@ const Home = ({ children }) => {
           </div>
           <div className="w-1/2 h-full mt-16">
             <ul className="text-md font-semibold uppercase flex flex-col gap-3">
-              <Link href="#about">
+              <a href="#about">
                 <li className="text-[#ECDFCC] cursor-pointer tracking-wider">
                   about
                 </li>
-              </Link>
-              <Link href="#experience">
+              </a>
+              <a href="#experience">
                 <li className="text-[#ECDFCC] cursor-pointer tracking-wider">
                   experiences
                 </li>
-              </Link>
-              <li className="text-[#ECDFCC] cursor-pointer tracking-wider">
-                projects
-              </li>
+              </a>
+              <a href="#projects">
+                <li className="text-[#ECDFCC] cursor-pointer tracking-wider">
+                  projects
+                </li>
+              </a>
             </ul>
           </div>
           <div className="w-full h-full flex flex-col justify-end gap-4">
@@ -194,13 +200,14 @@ const Home = ({ children }) => {
           </section>
           <section id="projects" className="flex flex-col gap-6 mt-16">
             <Link href="https://www.creciendo.com.ph/home">
-              <div className="w-full flex flex-row gap-1 group p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer">
+              <div className="w-full flex flex-row gap-4 group p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer">
                 <div className="w-[30%]">
                   <Image
-                    src="/app/_assets/creciendo.png"
+                    src="/creciendo.png"
                     alt="creciendo"
                     width={1920}
                     height={1080}
+                    className="border-2 rounded-md border-[#40534C]"
                   />
                 </div>
                 <div className="w-[60%]">
