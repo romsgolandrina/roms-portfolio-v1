@@ -210,7 +210,7 @@ const Home = ({ children }) => {
           </section>
           <section id="projects" className="w-full flex flex-col gap-4 mt-16">
             <Link href="https://www.creciendo.com.ph/home">
-              <div className="w-full flex flex-row gap-4 group p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer">
+              <div className="w-full flex flex-row gap-1 group p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer">
                 <div className="w-[30%]">
                   <Image
                     src="/creciendo.png"
