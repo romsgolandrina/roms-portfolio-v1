@@ -48,25 +48,35 @@ const Home = ({ children }) => {
               I build accessible, pixel-perfect digital experiences for the web.
             </h1>
           </div>
-          <div className="w-1/2 h-full mt-16">
+          <div className="w-[20%] h-full mt-16">
             <ul className="text-md font-semibold uppercase flex flex-col gap-3">
-              <a href="#about">
-                <li className="text-[#ECDFCC] cursor-pointer tracking-wider">
+              <li>
+                <a
+                  href="#about"
+                  className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
+                >
                   about
-                </li>
-              </a>
-              <a href="#experience">
-                <li className="text-[#ECDFCC] cursor-pointer tracking-wider">
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#experience"
+                  className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
+                >
                   experiences
-                </li>
-              </a>
-              <a href="#projects">
-                <li className="text-[#ECDFCC] cursor-pointer tracking-wider">
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
+                >
                   projects
-                </li>
-              </a>
+                </a>
+              </li>
             </ul>
           </div>
+
           <div className="w-full h-full flex flex-col justify-end gap-4">
             <div className="flex flex-row gap-4">
               <Link href="https://github.com/romsgolandrina">
@@ -138,7 +148,7 @@ const Home = ({ children }) => {
               <h1 className="w-[30%] text-md font-normal font-title uppercase">
                 2024 &mdash; Present
               </h1>
-              <h1 className="w-[70%] text-md font-normal font-title text-justify">
+              <h1 className="w-[70%] text-md font-normal font-title">
                 <span className="font-semibold text-white">
                   Recent BSIT graduate
                 </span>{" "}
@@ -163,7 +173,7 @@ const Home = ({ children }) => {
               <h1 className="w-[30%] text-md font-normal font-title uppercase">
                 Feb &mdash; July 2024
               </h1>
-              <h1 className="w-[70%] text-md font-normal font-title text-justify">
+              <h1 className="w-[70%] text-md font-normal font-title">
                 <span className="font-semibold text-white">
                   Full Stack Web Developer - Intern
                 </span>{" "}
@@ -198,7 +208,7 @@ const Home = ({ children }) => {
               />
             </h1>
           </section>
-          <section id="projects" className="flex flex-col gap-6 mt-16">
+          <section id="projects" className="w-full flex flex-col gap-4 mt-16">
             <Link href="https://www.creciendo.com.ph/home">
               <div className="w-full flex flex-row gap-4 group p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer">
                 <div className="w-[30%]">
@@ -207,11 +217,11 @@ const Home = ({ children }) => {
                     alt="creciendo"
                     width={1920}
                     height={1080}
-                    className="border-2 rounded-md border-[#40534C]"
+                    className="border-2 rounded-md border-[#40534C] w-[130px]"
                   />
                 </div>
-                <div className="w-[60%]">
-                  <h1 className="text-[#c2b7a7] font-normal text-md text-justify font-title">
+                <div className="w-[65%]">
+                  <h1 className="text-[#c2b7a7] font-normal text-md font-title">
                     The{" "}
                     <span className="text-white">Creciendo Philippines</span>{" "}
                     hiring website enables users to explore job listings and
@@ -220,7 +230,7 @@ const Home = ({ children }) => {
                     applicants and recruiters.
                   </h1>
                 </div>
-                <div className="w-[10%]">
+                <div className="w-[5%]">
                   <FiArrowUpRight
                     size={25}
                     className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1"

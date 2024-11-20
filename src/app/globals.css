@@ -30,3 +30,23 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+
+.nav-link {
+  @apply relative font-bold uppercase cursor-pointer transition-colors duration-300;
+  color: #ecdfcc;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffffff;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute h-[2px] bottom-[-2px] left-1/2 w-0 bg-white transition-all duration-300;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  @apply w-full left-0;
+}
