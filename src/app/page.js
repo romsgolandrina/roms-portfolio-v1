@@ -39,7 +39,7 @@ const Home = ({ children }) => {
       >
         {/*Header*/}
         <header className="w-1/2 sticky top-0 max-h-screen flex flex-col py-32 justify-between animate__animated animate__fadeIn animate__delay-1s 2xl:py-28 xl:py-28">
-          <div className="w-fulls h-full flex flex-col gap-3">
+          <div className="w-full flex flex-col gap-3">
             <h1 className="text-6xl font-bold font-title text-[#ECDFCC] tracking-tight 4xl:text-8xl 2xl:text-5xl xl:text-4xl lg:text-4xl">
               Roms Golandrina
             </h1>
@@ -49,37 +49,36 @@ const Home = ({ children }) => {
             <h1 className="text-xl font-normal font-title text-[#8b8378] pr-28 4xl:text-3xl 4xl:pr-40 2xl:text-base xl:text-base xl:pr-14 lg:text-base lg:pr-14">
               I build accessible, pixel-perfect digital experiences for the web.
             </h1>
+            <div className="w-[20%] h-full mt-16 lg:mt-10">
+              <ul className="text-base font-semibold uppercase flex flex-col gap-3 4xl:text-2xl 2xl:text-sm xl:text-sm lg:text-sm">
+                <li>
+                  <a
+                    href="#about"
+                    className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
+                  >
+                    about
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#experience"
+                    className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
+                  >
+                    experiences
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#projects"
+                    className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
+                  >
+                    projects
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="w-[20%] h-full mt-16">
-            <ul className="text-base font-semibold uppercase flex flex-col gap-3 4xl:text-2xl 2xl:text-sm xl:text-sm lg:text-sm">
-              <li>
-                <a
-                  href="#about"
-                  className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
-                >
-                  about
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#experience"
-                  className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
-                >
-                  experiences
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
-                >
-                  projects
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="w-full h-full flex flex-col justify-end">
+          <div className="w-full flex flex-col justify-end">
             <div className="flex flex-row gap-4 4xl:gap-7">
               <Link href="https://github.com/romsgolandrina">
                 <FaGithub
@@ -121,8 +120,8 @@ const Home = ({ children }) => {
         </header>
         <div className="w-1/2 max-h-screen overflow-y-auto scrollbar-hide">
           {/*About Section*/}
-          <section id="about" className="w-full h-1/2 mt-32 2xl:mt-28 xl:mt-28">
-            <h1 className="text-left text-[#c2b7a7] text-lg font-normal font-title 4xl:text-3xl 2xl:text-base xl:text-sm lg:text-sm">
+          <section id="about" className="w-full mt-32 2xl:mt-28 xl:mt-28">
+            <h1 className="text-left text-[#c2b7a7] text-lg font-normal font-title 4xl:text-3xl 2xl:text-base xl:text-sm lg:text-base">
               I’m a{" "}
               <span className="font-semibold text-white">
                 front-end developer
@@ -149,7 +148,7 @@ const Home = ({ children }) => {
           {/*Experiences Section*/}
           <section
             id="experience"
-            className="w-full mt-6 flex flex-col gap-6 4xl:mt-20 2xl:gap-4 xl:gap-4 xl:mt-4 lg:gap-4 lg:mt-4"
+            className="w-full mt-20 flex flex-col gap-6 4xl:mt-20 2xl:gap-4 xl:gap-4 xl:mt-10 lg:gap-4 lg:mt-8"
           >
             <div className="flex flex-row p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md lg:rounded-md lg:hover:shadow-md lg:gap-2">
               <h1 className="w-[30%] text-base font-normal font-title uppercase 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
