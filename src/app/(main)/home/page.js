@@ -28,7 +28,7 @@ const Home = ({ children }) => {
     <>
       {/*Mother Div*/}
       <div
-        className="w-full min-h-screen flex flex-row gap-4 justify-between px-[310px] 4xl:px-[280px] 2xl:px-[240px] xl:px-[200px]"
+        className="w-full min-h-screen flex flex-row gap-4 justify-between px-[310px] 4xl:px-[280px] 2xl:px-[240px] xl:px-[200px] lg:px-[140px]"
         style={{
           backgroundImage: `radial-gradient(circle at ${backgroundPosition}, rgba(236, 223, 204, 0.3), rgba(105, 117, 101, 0.2), rgba(30, 32, 30, 0.1))`,
           backgroundColor: "#1e201e", // Fallback for when the gradient is not supported
@@ -40,18 +40,18 @@ const Home = ({ children }) => {
         {/*Header*/}
         <header className="w-1/2 sticky top-0 max-h-screen flex flex-col py-32 justify-between animate__animated animate__fadeIn animate__delay-1s 2xl:py-28 xl:py-28">
           <div className="w-fulls h-full flex flex-col gap-3">
-            <h1 className="text-6xl font-bold font-title text-[#ECDFCC] tracking-tight 4xl:text-8xl 2xl:text-5xl xl:text-4xl">
+            <h1 className="text-6xl font-bold font-title text-[#ECDFCC] tracking-tight 4xl:text-8xl 2xl:text-5xl xl:text-4xl lg:text-4xl">
               Roms Golandrina
             </h1>
-            <h1 className="text-2xl font-normal font-title text-[#ECDFCC] 4xl:text-4xl 2xl:text-xl xl:text-xl">
+            <h1 className="text-2xl font-normal font-title text-[#ECDFCC] 4xl:text-4xl 2xl:text-xl xl:text-xl lg:text-xl">
               Front End Engineer
             </h1>
-            <h1 className="text-xl font-normal font-title text-[#8b8378] pr-28 4xl:text-3xl 4xl:pr-40 2xl:text-base xl:text-base xl:pr-14">
+            <h1 className="text-xl font-normal font-title text-[#8b8378] pr-28 4xl:text-3xl 4xl:pr-40 2xl:text-base xl:text-base xl:pr-14 lg:text-base lg:pr-14">
               I build accessible, pixel-perfect digital experiences for the web.
             </h1>
           </div>
           <div className="w-[20%] h-full mt-16">
-            <ul className="text-base font-semibold uppercase flex flex-col gap-3 4xl:text-2xl 2xl:text-sm xl:text-sm">
+            <ul className="text-base font-semibold uppercase flex flex-col gap-3 4xl:text-2xl 2xl:text-sm xl:text-sm lg:text-sm">
               <li>
                 <a
                   href="#about"
@@ -85,35 +85,35 @@ const Home = ({ children }) => {
                 <FaGithub
                   size={25}
                   color="#ECDFCC"
-                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px]"
+                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px] lg:w-[20px] lg:h-[20px]"
                 />
               </Link>
               <Link href="https://www.linkedin.com/in/jhon-rommel-jr-golandrina-9a544a315/">
                 <FaLinkedin
                   size={25}
                   color="#ECDFCC"
-                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px]"
+                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px] lg:w-[20px] lg:h-[20px]"
                 />
               </Link>
               <Link href="https://www.facebook.com/romsglndrn">
                 <FaFacebook
                   size={25}
                   color="#ECDFCC"
-                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px]"
+                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px] lg:w-[20px] lg:h-[20px]"
                 />
               </Link>
               <Link href="https://www.instagram.com/romsgolandrina/">
                 <FaInstagram
                   size={25}
                   color="#ECDFCC"
-                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px]"
+                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px] lg:w-[20px] lg:h-[20px]"
                 />
               </Link>
               <Link href="https://x.com/romsgolandrina">
                 <FaXTwitter
                   size={25}
                   color="#ECDFCC"
-                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px]"
+                  className="cursor-pointer w-[25px] h-[25px] 4xl:w-[40px] 4xl:h-[40px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px] lg:w-[20px] lg:h-[20px]"
                 />
               </Link>
             </div>
@@ -122,7 +122,7 @@ const Home = ({ children }) => {
         <div className="w-1/2 max-h-screen overflow-y-auto scrollbar-hide">
           {/*About Section*/}
           <section id="about" className="w-full h-1/2 mt-32 2xl:mt-28 xl:mt-28">
-            <h1 className="text-left text-[#c2b7a7] text-lg font-normal font-title 4xl:text-3xl 2xl:text-base xl:text-sm">
+            <h1 className="text-left text-[#c2b7a7] text-lg font-normal font-title 4xl:text-3xl 2xl:text-base xl:text-sm lg:text-sm">
               I’m a{" "}
               <span className="font-semibold text-white">
                 front-end developer
@@ -149,13 +149,13 @@ const Home = ({ children }) => {
           {/*Experiences Section*/}
           <section
             id="experience"
-            className="w-full mt-6 flex flex-col gap-6 4xl:mt-20 2xl:gap-4 xl:gap-4 xl:mt-4"
+            className="w-full mt-6 flex flex-col gap-6 4xl:mt-20 2xl:gap-4 xl:gap-4 xl:mt-4 lg:gap-4 lg:mt-4"
           >
-            <div className="flex flex-row p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md">
-              <h1 className="w-[30%] text-base font-normal font-title uppercase 4xl:text-2xl 2xl:text-sm xl:text-xs">
+            <div className="flex flex-row p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md lg:rounded-md lg:hover:shadow-md lg:gap-2">
+              <h1 className="w-[30%] text-base font-normal font-title uppercase 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
                 2024 &mdash; Present
               </h1>
-              <h1 className="w-[70%] text-base font-normal font-title 4xl:text-2xl 2xl:text-sm xl:text-xs">
+              <h1 className="w-[70%] text-base font-normal font-title 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
                 <span className="font-semibold text-white">
                   Recent BSIT graduate
                 </span>{" "}
@@ -163,24 +163,24 @@ const Home = ({ children }) => {
                 Philippines - Quezon City, majoring in cybersecurity. Eager to
                 gain industry experience and apply my academic knowledge in a
                 professional setting.
-                <div className="flex flex-row gap-2">
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1">
+                <div className="flex flex-row gap-2 lg:flex-wrap lg:gap-1">
+                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
                     Fresh Graduate
                   </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1">
+                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
                     Cybersecurity
                   </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1">
+                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
                     Distinction
                   </span>
                 </div>
               </h1>
             </div>
-            <div className="flex flex-row p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md">
-              <h1 className="w-[30%] text-base font-normal font-title uppercase 4xl:text-2xl 2xl:text-sm xl:text-xs">
+            <div className="flex flex-row p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md lg:rounded-md lg:hover:shadow-md lg:gap-2">
+              <h1 className="w-[30%] text-base font-normal font-title uppercase 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
                 Feb &mdash; July 2024
               </h1>
-              <h1 className="w-[70%] text-base font-normal font-title 4xl:text-2xl 2xl:text-sm xl:text-xs">
+              <h1 className="w-[70%] text-base font-normal font-title 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
                 <span className="font-semibold text-white">
                   Full Stack Web Developer - Intern
                 </span>{" "}
@@ -188,17 +188,17 @@ const Home = ({ children }) => {
                 of a Human Resource Information System (HRIS) and independently
                 led the creation of a hiring website for the company, focusing
                 primarily on front-end development.
-                <div className="flex flex-row gap-2">
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1">
+                <div className="flex flex-row gap-2 lg:flex-wrap lg:gap-1">
+                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
                     Next.js
                   </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1">
+                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
                     TailwindCSS
                   </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1">
+                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
                     MongoDB
                   </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1">
+                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
                     Node.js
                   </span>
                 </div>
@@ -206,33 +206,33 @@ const Home = ({ children }) => {
             </div>
             <h1
               onClick={() => window.open("/GOLANDRINA_RESUME.pdf", "_blank")}
-              className="text-[#c2b7a7] text-lg font-bold font-title mt-6 flex items-center group cursor-pointer hover:text-white 4xl:text-2xl 2xl:text-sm xl:text-xs"
+              className="text-[#c2b7a7] text-lg font-bold font-title mt-6 flex items-center group cursor-pointer hover:text-white 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs"
             >
               View Full Résumé
               <FiArrowUpRight
                 size={25}
-                className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 w-25 h-25  4xl:w-[35px] 4xl:h-[35px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[15px] xl:h-[15px]"
+                className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 w-25 h-25  4xl:w-[35px] 4xl:h-[35px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[15px] xl:h-[15px] lg:w-[15px] lg:h-[15px]"
               />
             </h1>
           </section>
           {/*Projects Section*/}
           <section
             id="projects"
-            className="w-full flex flex-col gap-4 mt-16 xl:mt-14"
+            className="w-full flex flex-col gap-4 mt-16 xl:mt-14 lg:mt-10"
           >
             <Link href="https://www.creciendo.com.ph/home">
-              <div className="w-full flex flex-row gap-1 group p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md">
+              <div className="w-full flex flex-row gap-1 group p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md lg:rounded-md lg:hover:shadow-md lg:gap-2">
                 <div className="w-[30%]">
                   <Image
                     src="/creciendo.png"
                     alt="creciendo"
                     width={1920}
                     height={1080}
-                    className="border-2 rounded-md border-[#40534C] w-[130px] 4xl:w-[190px] 2xl:w-[115px] xl:w-[100px]"
+                    className="border-2 rounded-md border-[#40534C] w-[130px] 4xl:w-[190px] 2xl:w-[115px] xl:w-[100px] lg:w-[90px]"
                   />
                 </div>
                 <div className="w-[65%]">
-                  <h1 className="text-[#c2b7a7] font-normal text-base font-title 4xl:text-2xl 2xl:text-sm xl:text-xs">
+                  <h1 className="text-[#c2b7a7] font-normal text-base font-title 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs ">
                     The{" "}
                     <span className="text-white">Creciendo Philippines</span>{" "}
                     hiring website enables users to explore job listings and
@@ -244,7 +244,7 @@ const Home = ({ children }) => {
                 <div className="w-[5%]">
                   <FiArrowUpRight
                     size={25}
-                    className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 4xl:w-[35px] 4xl:h-[35px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[15px] xl:h-[15px]"
+                    className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 4xl:w-[35px] 4xl:h-[35px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[15px] xl:h-[15px] lg:w-[15px] lg:h-[15px]"
                   />
                 </div>
               </div>
@@ -252,7 +252,7 @@ const Home = ({ children }) => {
           </section>
           {/*Footer*/}
           <div className="w-3/4 rounded-md py-12 mb-16">
-            <h1 className="text-base text-justify text-[#8b8378] font-title font-normal 4xl:text-2xl 2xl:text-sm xl:text-xs">
+            <h1 className="text-base text-justify text-[#8b8378] font-title font-normal 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
               Loosely designed in{" "}
               <span className="text-white font-semibold">Figma</span> and coded
               in <span className="text-white font-semibold">Visual Studio</span>{" "}

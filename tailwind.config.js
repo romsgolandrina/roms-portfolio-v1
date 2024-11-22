@@ -23,7 +23,7 @@ module.exports = {
       xs: "320px", // Small smartphones (portrait)
       sm: "480px", // Smartphones
       md: "768px", // Tablets (portrait)
-      lg: "1024px", // Tablets (landscape) / Small laptops
+      lg: { min: "1024px", max: "1279px" }, // Tablets (landscape) / Small laptops
       xl: { min: "1280px", max: "1535px" }, // Laptops only
       "2xl": { min: "1536px", max: "1919px" }, // Large laptops
       "3xl": "1920px", // Full HD monitors
