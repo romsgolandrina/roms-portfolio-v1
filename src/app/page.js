@@ -118,7 +118,8 @@ const Home = ({ children }) => {
             </div>
           </div>
         </header>
-        <div className="w-1/2 max-h-screen overflow-y-auto scrollbar-hide">
+        {/*Information*/}
+        <div className="w-1/2 max-h-screen overflow-y-auto scrollbar-hide animate__animated animate__fadeIn animate__delay-1s">
           {/*About Section*/}
           <section id="about" className="w-full mt-32 2xl:mt-28 xl:mt-28">
             <h1 className="text-left text-[#c2b7a7] text-lg font-normal font-title 4xl:text-3xl 2xl:text-base xl:text-sm lg:text-base">
@@ -145,6 +146,7 @@ const Home = ({ children }) => {
               refine my skills with every new project.
             </h1>
           </section>
+
           {/*Experiences Section*/}
           <section
             id="experience"
@@ -214,6 +216,7 @@ const Home = ({ children }) => {
               />
             </h1>
           </section>
+
           {/*Projects Section*/}
           <section
             id="projects"
@@ -249,6 +252,7 @@ const Home = ({ children }) => {
               </div>
             </Link>
           </section>
+
           {/*Footer*/}
           <div className="w-3/4 rounded-md py-12 mb-16">
             <h1 className="text-base text-justify text-[#8b8378] font-title font-normal 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
