@@ -44,7 +44,7 @@ const Home = ({ children }) => {
               Roms Golandrina
             </h1>
             <h1 className="text-2xl font-normal font-title text-[#ECDFCC] 4xl:text-4xl 2xl:text-xl xl:text-xl lg:text-xl">
-              Front End Engineer
+              Front End 
             </h1>
             <h1 className="text-xl font-normal font-title text-[#8b8378] pr-28 4xl:text-3xl 4xl:pr-40 2xl:text-base xl:text-base xl:pr-14 lg:text-base lg:pr-14">
               I build accessible, pixel-perfect digital experiences for the web.
