@@ -155,7 +155,9 @@ const Home = ({ children }) => {
           >
             <ExperienceCard />
             <h1
-              onClick={() => window.open("/GOLANDRINA_RESUME.pdf", "_blank")}
+              onClick={() =>
+                window.open("/GOLANDRINA_RESUME_UPDATED.pdf", "_blank")
+              }
               className="text-[#c2b7a7] text-lg font-bold font-title mt-6 flex items-center group cursor-pointer hover:text-white 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs"
             >
               View Full Résumé

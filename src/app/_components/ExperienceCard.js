@@ -20,7 +20,7 @@ const ExperienceCard = () => {
           new tools and technologies, including Postman for API testing, JWT.io
           for secure authentication, and various React frameworks and libraries
           to improve the development process and user experience.
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-wrap gap-2">
             <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-md mt-1 font-semibold">
               React
             </span>
@@ -48,7 +48,7 @@ const ExperienceCard = () => {
           with Latin honors from the Technological Institute of the Philippines
           - Quezon City, majoring in cybersecurity. Eager to gain industry
           experience and apply my academic knowledge in a professional setting.
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-wrap gap-2">
             <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-md mt-1 font-semibold">
               Fresh Graduate
             </span>
@@ -73,7 +73,7 @@ const ExperienceCard = () => {
           Human Resource Information System (HRIS) and independently led the
           creation of a hiring website for the company, focusing primarily on
           front-end development.
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-wrap gap-2">
             <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-md mt-1 font-semibold">
               Next.js
             </span>
