@@ -7,6 +7,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
 import "animate.css";
+import ExperienceCard from "./_components/ExperienceCard";
 
 const Home = ({ children }) => {
   const [backgroundPosition, setBackgroundPosition] = useState("center");
@@ -31,10 +32,10 @@ const Home = ({ children }) => {
         className="w-full min-h-screen flex flex-row gap-4 justify-between px-[310px] 4xl:px-[280px] 2xl:px-[240px] xl:px-[200px] lg:px-[140px]"
         style={{
           backgroundImage: `radial-gradient(circle at ${backgroundPosition}, rgba(236, 223, 204, 0.3), rgba(105, 117, 101, 0.2), rgba(30, 32, 30, 0.1))`,
-          backgroundColor: "#1e201e", // Fallback for when the gradient is not supported
+          backgroundColor: "#1e201e",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          color: "#ECDFCC", // Ensure text color stays consistent
+          color: "#ECDFCC",
         }}
       >
         {/*Header*/}
@@ -152,59 +153,7 @@ const Home = ({ children }) => {
             id="experience"
             className="w-full mt-20 flex flex-col gap-6 4xl:mt-20 2xl:gap-4 xl:gap-4 xl:mt-10 lg:gap-4 lg:mt-8"
           >
-            <div className="flex flex-row p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md lg:rounded-md lg:hover:shadow-md lg:gap-2">
-              <h1 className="w-[30%] text-base font-normal font-title uppercase 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
-                2024 &mdash; Present
-              </h1>
-              <h1 className="w-[70%] text-base font-normal font-title 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
-                <span className="font-semibold text-white">
-                  Recent BSIT graduate
-                </span>{" "}
-                with Latin honors from the Technological Institute of the
-                Philippines - Quezon City, majoring in cybersecurity. Eager to
-                gain industry experience and apply my academic knowledge in a
-                professional setting.
-                <div className="flex flex-row gap-2 lg:flex-wrap lg:gap-1">
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
-                    Fresh Graduate
-                  </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
-                    Cybersecurity
-                  </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
-                    Distinction
-                  </span>
-                </div>
-              </h1>
-            </div>
-            <div className="flex flex-row p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md lg:rounded-md lg:hover:shadow-md lg:gap-2">
-              <h1 className="w-[30%] text-base font-normal font-title uppercase 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
-                Feb &mdash; July 2024
-              </h1>
-              <h1 className="w-[70%] text-base font-normal font-title 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
-                <span className="font-semibold text-white">
-                  Full Stack Web Developer - Intern
-                </span>{" "}
-                at Creciendo Philippines, where I contributed to the development
-                of a Human Resource Information System (HRIS) and independently
-                led the creation of a hiring website for the company, focusing
-                primarily on front-end development.
-                <div className="flex flex-row gap-2 lg:flex-wrap lg:gap-1">
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
-                    Next.js
-                  </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
-                    TailwindCSS
-                  </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
-                    MongoDB
-                  </span>
-                  <span className="badge bg-[#4A628A]/15 p-3 text-[#B9E5E8] text-base mt-1 font-semibold 4xl:text-2xl 4xl:p-4 2xl:text-sm 2xl:p-2 xl:text-xs xl:p-1 lg:text-xs lg:p-1">
-                    Node.js
-                  </span>
-                </div>
-              </h1>
-            </div>
+            <ExperienceCard />
             <h1
               onClick={() => window.open("/GOLANDRINA_RESUME.pdf", "_blank")}
               className="text-[#c2b7a7] text-lg font-bold font-title mt-6 flex items-center group cursor-pointer hover:text-white 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs"
