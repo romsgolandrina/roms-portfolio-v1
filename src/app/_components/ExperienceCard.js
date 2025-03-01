@@ -10,7 +10,7 @@ const ExperienceCard = () => {
         <h1 className="w-[70%] text-md font-normal font-title text-justify">
           <span className="font-semibold text-white">
             Junior Front-end Developer - Contractual
-          </span>
+          </span>{" "}
           During my time at Media Meter Inc., I contributed to enhancing
           existing web applications by implementing new features and optimizing
           performance. I gained hands-on experience with API integration,
