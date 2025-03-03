@@ -6,7 +6,7 @@ const ExperienceCard = () => {
       <a href="https://media-meter.com/">
         <div className="flex flex-row p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer">
           <h1 className="w-[30%] text-md font-normal font-title uppercase">
-            Dec &mdash; Mar 2024
+            Dec &mdash; Mar 2025
           </h1>
           <h1 className="w-[70%] text-md font-normal font-title text-justify">
             <span className="font-semibold text-white">
