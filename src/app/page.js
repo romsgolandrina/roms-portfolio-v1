@@ -6,7 +6,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
-import "animate.css";
 import ExperienceCard from "./_components/ExperienceCard";
 import MobileView from "./_components/MobileView";
 
@@ -30,7 +29,7 @@ const Home = ({ children }) => {
     <>
       {/*Mother Div*/}
       <div
-        className="w-full min-h-screen flex flex-row gap-4 justify-between px-[310px] 4xl:px-[280px] 2xl:px-[240px] xl:px-[200px] lg:px-[140px] md:px-[40px] md:py-10 sm:px-[20px] xs:px-[8px]"
+        className="w-full min-h-screen flex flex-row gap-4 justify-between px-[310px] 4xl:px-[280px] 2xl:px-[240px] xl:px-[200px] lg:px-[140px] md:px-[40px] md:py-10 sm:px-[20px] xs:px-[12px]"
         style={{
           backgroundImage: `radial-gradient(circle at ${backgroundPosition}, rgba(236, 223, 204, 0.3), rgba(105, 117, 101, 0.2), rgba(30, 32, 30, 0.1))`,
           backgroundColor: "#1e201e",
@@ -42,7 +41,7 @@ const Home = ({ children }) => {
         {/*Mobile View*/}
         <MobileView />
         {/*Header*/}
-        <header className="w-1/2 sticky top-0 max-h-screen flex flex-col py-32 justify-between animate__animated animate__fadeIn animate__delay-1s 2xl:py-28 xl:py-28 lg:display md:hidden sm:hidden xs:hidden">
+        <header className="w-1/2 sticky top-0 max-h-screen flex flex-col py-32 justify-between 2xl:py-28 xl:py-28 lg:display md:hidden sm:hidden xs:hidden">
           <div className="w-full flex flex-col gap-3">
             <h1 className="text-6xl font-bold font-title text-[#ECDFCC] tracking-tight 4xl:text-8xl 2xl:text-5xl xl:text-4xl lg:text-4xl">
               Roms Golandrina
@@ -123,7 +122,7 @@ const Home = ({ children }) => {
           </div>
         </header>
         {/*Information*/}
-        <div className="w-1/2 max-h-screen overflow-y-auto scrollbar-hide animate__animated animate__fadeIn animate__delay-1s md:hidden sm:hidden xs:hidden">
+        <div className="w-1/2 max-h-screen overflow-y-auto scrollbar-hide md:hidden sm:hidden xs:hidden">
           {/*About Section*/}
           <section id="about" className="w-full mt-32 2xl:mt-28 xl:mt-28">
             <h1 className="text-left text-[#c2b7a7] text-lg font-normal font-title 4xl:text-3xl 2xl:text-xl xl:text-base lg:text-sm">

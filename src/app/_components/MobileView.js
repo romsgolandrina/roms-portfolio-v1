@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const MobileView = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col 4xl:hidden 3xl:hidden 2xl:hidden xl:hidden lg:hidden md:display sm:display xs:display">
+    <div className="w-full min-h-screen flex flex-col 4xl:hidden 3xl:hidden 2xl:hidden xl:hidden lg:hidden md:display sm:display xs:display xs:px-[8px] xs:py-[10px]">
       <div className="flex flex-col gap-16">
         <div className="flex flex-col gap-2">
           <h1 className="text-6xl font-bold font-title text-[#ECDFCC] tracking-tight 4xl:text-8xl 2xl:text-5xl xl:text-4xl lg:text-4xl">
