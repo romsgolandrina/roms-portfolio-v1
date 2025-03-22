@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import "animate.css";
 import ExperienceCard from "./_components/ExperienceCard";
+import MobileView from "./_components/MobileView";
 
 const Home = ({ children }) => {
   const [backgroundPosition, setBackgroundPosition] = useState("center");
@@ -29,7 +30,7 @@ const Home = ({ children }) => {
     <>
       {/*Mother Div*/}
       <div
-        className="w-full min-h-screen flex flex-row gap-4 justify-between px-[310px] 4xl:px-[280px] 2xl:px-[240px] xl:px-[200px] lg:px-[140px]"
+        className="w-full min-h-screen flex flex-row gap-4 justify-between px-[310px] 4xl:px-[280px] 2xl:px-[240px] xl:px-[200px] lg:px-[140px] md:px-[40px] md:py-10 sm:px-[20px] xs:px-[8px]"
         style={{
           backgroundImage: `radial-gradient(circle at ${backgroundPosition}, rgba(236, 223, 204, 0.3), rgba(105, 117, 101, 0.2), rgba(30, 32, 30, 0.1))`,
           backgroundColor: "#1e201e",
@@ -38,8 +39,10 @@ const Home = ({ children }) => {
           color: "#ECDFCC",
         }}
       >
+        {/*Mobile View*/}
+        <MobileView />
         {/*Header*/}
-        <header className="w-1/2 sticky top-0 max-h-screen flex flex-col py-32 justify-between animate__animated animate__fadeIn animate__delay-1s 2xl:py-28 xl:py-28">
+        <header className="w-1/2 sticky top-0 max-h-screen flex flex-col py-32 justify-between animate__animated animate__fadeIn animate__delay-1s 2xl:py-28 xl:py-28 lg:display md:hidden sm:hidden xs:hidden">
           <div className="w-full flex flex-col gap-3">
             <h1 className="text-6xl font-bold font-title text-[#ECDFCC] tracking-tight 4xl:text-8xl 2xl:text-5xl xl:text-4xl lg:text-4xl">
               Roms Golandrina
@@ -120,10 +123,10 @@ const Home = ({ children }) => {
           </div>
         </header>
         {/*Information*/}
-        <div className="w-1/2 max-h-screen overflow-y-auto scrollbar-hide animate__animated animate__fadeIn animate__delay-1s">
+        <div className="w-1/2 max-h-screen overflow-y-auto scrollbar-hide animate__animated animate__fadeIn animate__delay-1s md:hidden sm:hidden xs:hidden">
           {/*About Section*/}
           <section id="about" className="w-full mt-32 2xl:mt-28 xl:mt-28">
-            <h1 className="text-left text-[#c2b7a7] text-lg font-normal font-title 4xl:text-3xl 2xl:text-base xl:text-sm lg:text-base">
+            <h1 className="text-left text-[#c2b7a7] text-lg font-normal font-title 4xl:text-3xl 2xl:text-xl xl:text-base lg:text-sm">
               I’m a{" "}
               <span className="font-semibold text-white">
                 front-end developer
@@ -158,12 +161,12 @@ const Home = ({ children }) => {
               onClick={() =>
                 window.open("/GOLANDRINA_RESUME_UPDATED.pdf", "_blank")
               }
-              className="text-[#c2b7a7] text-lg font-bold font-title mt-6 flex items-center group cursor-pointer hover:text-white 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs"
+              className="text-[#c2b7a7] text-lg font-bold font-title mt-6 flex items-center group cursor-pointer hover:text-white 4xl:text-2xl 2xl:text-sm xl:text-base lg:text-sm"
             >
               View Full Résumé
               <FiArrowUpRight
                 size={25}
-                className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 w-25 h-25  4xl:w-[35px] 4xl:h-[35px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[15px] xl:h-[15px] lg:w-[15px] lg:h-[15px]"
+                className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 w-25 h-25  4xl:w-[35px] 4xl:h-[35px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px] lg:w-[15px] lg:h-[15px]"
               />
             </h1>
           </section>
@@ -185,7 +188,7 @@ const Home = ({ children }) => {
                   />
                 </div>
                 <div className="w-[65%]">
-                  <h1 className="text-[#c2b7a7] font-normal text-base font-title 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs ">
+                  <h1 className="text-[#c2b7a7] font-normal text-base font-title 4xl:text-3xl 2xl:text-lg xl:text-base lg:text-xs ">
                     The{" "}
                     <span className="text-white">Creciendo Philippines</span>{" "}
                     hiring website enables users to explore job listings and
@@ -197,7 +200,7 @@ const Home = ({ children }) => {
                 <div className="w-[5%]">
                   <FiArrowUpRight
                     size={25}
-                    className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 4xl:w-[35px] 4xl:h-[35px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[15px] xl:h-[15px] lg:w-[15px] lg:h-[15px]"
+                    className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 4xl:w-[35px] 4xl:h-[35px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px] lg:w-[15px] lg:h-[15px]"
                   />
                 </div>
               </div>
@@ -206,7 +209,7 @@ const Home = ({ children }) => {
 
           {/*Footer*/}
           <div className="w-3/4 rounded-md py-12 mb-16">
-            <h1 className="text-base text-justify text-[#8b8378] font-title font-normal 4xl:text-2xl 2xl:text-sm xl:text-xs lg:text-xs">
+            <h1 className="text-base text-justify text-[#8b8378] font-title font-normal 4xl:text-3xl 2xl:text-sm xl:text-base lg:text-xs">
               Loosely designed in{" "}
               <span className="text-white font-semibold">Figma</span> and coded
               in <span className="text-white font-semibold">Visual Studio</span>{" "}
