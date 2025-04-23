@@ -56,7 +56,17 @@ const Home = ({ children }) => {
               <ul className="text-base font-semibold uppercase flex flex-col gap-3 4xl:text-2xl 2xl:text-sm xl:text-sm lg:text-sm">
                 <li>
                   <a
-                    href="#about"
+                    onClick={() => {
+                      const container =
+                        document.querySelector(".overflow-y-auto");
+                      const target = document.getElementById("about");
+                      if (container && target) {
+                        container.scrollTo({
+                          top: target.offsetTop - container.offsetTop,
+                          behavior: "smooth",
+                        });
+                      }
+                    }}
                     className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
                   >
                     about
@@ -64,7 +74,17 @@ const Home = ({ children }) => {
                 </li>
                 <li>
                   <a
-                    href="#experience"
+                    onClick={() => {
+                      const container =
+                        document.querySelector(".overflow-y-auto");
+                      const target = document.getElementById("experience");
+                      if (container && target) {
+                        container.scrollTo({
+                          top: target.offsetTop - container.offsetTop,
+                          behavior: "smooth",
+                        });
+                      }
+                    }}
                     className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
                   >
                     experiences
@@ -72,7 +92,17 @@ const Home = ({ children }) => {
                 </li>
                 <li>
                   <a
-                    href="#projects"
+                    onClick={() => {
+                      const container =
+                        document.querySelector(".overflow-y-auto");
+                      const target = document.getElementById("projects");
+                      if (container && target) {
+                        container.scrollTo({
+                          top: target.offsetTop - container.offsetTop,
+                          behavior: "smooth",
+                        });
+                      }
+                    }}
                     className="text-[#ECDFCC] cursor-pointer tracking-wider nav-link"
                   >
                     projects
@@ -181,6 +211,7 @@ const Home = ({ children }) => {
                   <Image
                     src="/creciendo.png"
                     alt="creciendo"
+                    loading="lazy"
                     width={1920}
                     height={1080}
                     className="border-2 rounded-md border-[#40534C] w-[130px] 4xl:w-[190px] 2xl:w-[115px] xl:w-[100px] lg:w-[90px]"
@@ -194,6 +225,34 @@ const Home = ({ children }) => {
                     submit applications seamlessly. Designed for a smooth user
                     experience, it streamlines the hiring process for both
                     applicants and recruiters.
+                  </h1>
+                </div>
+                <div className="w-[5%]">
+                  <FiArrowUpRight
+                    size={25}
+                    className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 4xl:w-[35px] 4xl:h-[35px] 2xl:w-[20px] 2xl:h-[20px] xl:w-[20px] xl:h-[20px] lg:w-[15px] lg:h-[15px]"
+                  />
+                </div>
+              </div>
+            </Link>
+            <Link href="https://marci-metzger-blush.vercel.app/">
+              <div className="w-full flex flex-row gap-1 group p-4 rounded-md hover:bg-white/10 hover:shadow-md text-[#c2b7a7] cursor-pointer 4xl:rounded-lg 4xl:hover:shadow-lg 2xl:rounded-md 2xl:hover:shadow-md xl:rounded-md xl:hover:shadow-md lg:rounded-md lg:hover:shadow-md lg:gap-2">
+                <div className="w-[30%]">
+                  <Image
+                    src="/landing_page.png"
+                    alt="marci metzger"
+                    loading="lazy"
+                    width={1920}
+                    height={1080}
+                    className="border-2 rounded-md border-[#40534C] w-[130px] 4xl:w-[190px] 2xl:w-[115px] xl:w-[100px] lg:w-[90px]"
+                  />
+                </div>
+                <div className="w-[65%]">
+                  <h1 className="text-[#c2b7a7] font-normal text-base font-title 4xl:text-3xl 2xl:text-lg xl:text-base lg:text-xs ">
+                    A clean and minimal landing page for{" "}
+                    <span className="text-white">Marci Metzger</span>, designed
+                    to highlight my expertise in front-end development and UI
+                    design.
                   </h1>
                 </div>
                 <div className="w-[5%]">
